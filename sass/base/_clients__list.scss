@@ -1,8 +1,18 @@
+/* Постоянные клиенты */
+
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 
   &__item {
-    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 
   &__icon {
