@@ -1,0 +1,46 @@
+.our__team {
+  background-color: #f5f4fa;
+
+  &__list {
+    display: flex;
+  }
+}
+
+.our__team .our__team__title {
+  margin-bottom: 50px;
+}
+
+.our__team__list__item {
+  padding-bottom: 30px;
+  background-color: $primary-white-color;
+  border-radius: 0px 0px 4px 4px;
+
+  & .img {
+    margin-bottom: 30px;
+  }
+
+  &__headline {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.18;
+    color: $color-grey;
+    margin-bottom: 16px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.person__info {
+  max-width: 270px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}

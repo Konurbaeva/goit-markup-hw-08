@@ -1,0 +1,13 @@
+.header {
+  border: 1px solid $header-color;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0px;
+
+  & .container {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid $header-color;
+  }
+}

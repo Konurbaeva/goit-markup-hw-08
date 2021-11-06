@@ -1,0 +1,38 @@
+.social__list {
+  @include centeredFlex;
+}
+
+.social__list__item {
+  margin-left: 10px;
+}
+
+.social__list__icon {
+  fill: $color-grey;
+}
+
+.social__list__icon__footer {
+  fill: $primary-white-color;
+}
+
+.social__list .social__list__item:first-child {
+  margin-left: 10px;
+}
+
+.social__list__link {
+  @include centeredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover .social__list__icon,
+  &:focus .social__list__icon,
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background: $background-color;
+  }
+
+  &-footer {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

@@ -1,0 +1,154 @@
+.d-flex {
+  display: flex;
+}
+
+.form {
+  padding: 40px;
+  text-align: center;
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    letter-spacing: 0.01em;
+
+    color: $color-grey;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+  }
+}
+
+.form__input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+
+  padding: 12px 15px 12px 45px;
+
+  &:focus,
+  &:hover,
+  &:focus + .form__svg,
+  &:hover + .form__svg {
+    fill: $background-color;
+    border-color: $background-color;
+  }
+}
+
+.form__textarea {
+  display: block;
+  height: 120px;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+  & {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+
+    padding: 12px 15px 12px 45px;
+  }
+
+  &:focus,
+  &:hover {
+    fill: $background-color;
+    border-color: $background-color;
+  }
+}
+
+.form__btn {
+  padding: 10px 56px;
+  border-radius: 4px;
+  background: $background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  text-transform: capitalize;
+
+  &:focus,
+  &:hover {
+    background: #188ce8;
+  }
+}
+
+.form_label {
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $color-grey;
+  margin: 10px 0 30px 0;
+}
+
+.form_checkbox {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: -1px;
+
+  &:checked + .form__box__icon {
+    border: none;
+    background: $background-color;
+
+    border-radius: 2px;
+    fill: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/svg/check.svg);
+    background-size: contain;
+  }
+}
+
+.form__box__icon {
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  @include centeredFlex;
+  margin-right: 8px;
+}
+
+.form__link {
+  color: $background-color;
+  display: inline-block;
+  margin-left: 7px;
+  text-decoration: underline;
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+.form__svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #212121;
+}

@@ -1,0 +1,31 @@
+.clients__list {
+  display: flex;
+
+  &__item {
+    margin-left: 30px;
+  }
+
+  &__icon {
+    fill: #afb1b8;
+  }
+}
+
+.clients__list .clients__list__item:first-child {
+  margin-left: 0px;
+}
+
+.clients__list__link {
+  border: 1px solid #afb188;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 31px;
+  display: inline-block;
+
+  &:hover .clients__list__icon,
+  &:focus .clients__list__icon,
+  &:hover,
+  &:focus {
+    border-color: $background-color;
+    fill: $background-color;
+  }
+}
