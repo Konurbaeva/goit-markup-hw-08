@@ -1,6 +1,15 @@
+// .our__work.section {
+//   padding-top: 0;
+// }
+
 .our__work.section {
-  padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
+
 .our__work__title {
   margin-bottom: 50px;
 }

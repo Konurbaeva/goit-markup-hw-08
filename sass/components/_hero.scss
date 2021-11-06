@@ -35,14 +35,18 @@
     color: $primary-white-color;
     font-family: Roboto;
     font-style: inherit;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    @include font(26px, #fff, 1.6, 900);
+    @media screen and (min-width: 1200px) {
+      @include font(44px, #fff, 1.17, 900);
+    }
+    text-align: center;
     letter-spacing: 0.06em;
     color: $primary-white-color;
-    margin: auto;
+    text-transform: uppercase;
+    max-width: 650px;
+    margin: 0 auto;
     display: flex;
-    text-align: center;
+    margin-bottom: 30px;
     width: 55%;
   }
 }

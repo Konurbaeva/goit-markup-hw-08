@@ -105,8 +105,19 @@ img {
   height: auto;
 }
 
+// .section__title {
+//   margin: 94px;
+// }
+
 .section__title {
-  margin: 94px;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  @include font(28px, $primary-text-color, 1.17, bold);
+
+  @media screen and (min-width: 1200px) {
+    @include font(36px, $primary-text-color, 1.16, bold);
+  }
 }
 
 a {
