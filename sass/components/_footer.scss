@@ -7,15 +7,19 @@
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer_button {
-  width: 200px;
-  height: 50px;
-  left: 1185px;
-  top: 2787px;
+  //todo check if below is needed
+  // width: 200px;
+  // height: 50px;
+  // left: 1185px;
+  // top: 2787px;
 
   background: $background-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -80,17 +84,15 @@
 
 .footer__social__media__title {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  @include font(14px, #fff, 1.14, 700);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: $primary-white-color;
+  margin-bottom: 20px;
   margin: 12px 0 20px 0;
 }
 
 .footer__left__box__offset {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
