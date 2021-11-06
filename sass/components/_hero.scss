@@ -2,6 +2,17 @@
   padding: 200px 0;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/heromobile@1x.jpg);
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/herotab@1x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/herodesk@1x.jpg);
+  }
+
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1600px;
