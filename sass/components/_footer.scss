@@ -8,8 +8,11 @@
 
 .footer__container {
   display: block;
-
   @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -92,6 +95,16 @@
 }
 
 .footer__left__box__offset {
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.03em;
+  @include font(24px, #2196f3, 1.16, bold);
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
