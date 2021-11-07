@@ -121,9 +121,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: -30px;
+  margin-left: 15px;
   margin-top: -30px;
-  padding-left: 15 px;
-  padding-right: 15 px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -145,10 +146,6 @@
 
 .clients__list__icon {
   fill: #afb1b8;
-}
-
-.clients__list .clients__list__item:first-child {
-  margin-left: 0px;
 }
 
 .clients__list__link {
@@ -1316,18 +1313,18 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 8 px;
-  top: 8 px;
-  width: 30 px;
-  height: 30 px;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
   background-color: #fff;
-  border: 1 px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 
 .modal-title {
-  margin-top: 40 px;
-  margin-bottom: 12 px;
+  margin-top: 40px;
+  margin-bottom: 12px;
   color: #212121;
   font-style: normal;
   font-weight: 700;
