@@ -1,20 +1,37 @@
+// .contact {
+//   display: flex;
+//   margin-left: auto;
+// }
+
 .contact {
-  display: flex;
+  display: none;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 32px 0;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact__link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  padding: 32px 0;
-  letter-spacing: 0.02em;
-
-  display: flex;
+  display: none;
   align-items: center;
   color: $color-grey;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 32px 0;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact__icon  {

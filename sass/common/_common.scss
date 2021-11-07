@@ -9,27 +9,10 @@ body {
   letter-spacing: 0.02em;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .button {
   cursor: pointer;
   border: none;
   color: $primary-white-color;
-}
-
-textarea {
-  resize: none;
 }
 
 ul {
@@ -80,8 +63,12 @@ ul {
   list-style: none;
 }
 
+h1 {
+  display: block;
+}
+
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

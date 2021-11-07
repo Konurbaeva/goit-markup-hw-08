@@ -15,7 +15,7 @@
 
   background-size: cover;
   background-repeat: no-repeat;
-  //max-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
 
   &__button {
@@ -28,27 +28,41 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     @include font(16px, #fff, 1.87, 700);
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0px 4px 4px rgb(0, 0, 0);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  // &__title {
+  //   display: block;
+  //   text-transform: uppercase;
+  //   color: $primary-white-color;
+  //   font-family: Roboto;
+  //   font-style: inherit;
+  //   @include font(26px, #fff, 1.6, 900);
+  //   @media screen and (min-width: 1200px) {
+  //     @include font(44px, #fff, 1.17, 900);
+  //     display: flex;
+  //   }
+  //   text-align: center;
+  //   letter-spacing: 0.06em;
+  //   color: $primary-white-color;
+  //   text-transform: uppercase;
+  //   max-width: 650px;
+  //   margin: 0 auto;
+
+  //   margin-bottom: 30px;
+  //   width: 55%;
+  // }
   &__title {
-    text-transform: uppercase;
-    color: $primary-white-color;
-    font-family: Roboto;
-    font-style: inherit;
-    @include font(26px, #fff, 1.6, 900);
-    @media screen and (min-width: 1200px) {
-      @include font(44px, #fff, 1.17, 900);
-    }
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
-    color: $primary-white-color;
+    //margin-bottom: 30 px;
+    color: #fff;
     text-transform: uppercase;
-    max-width: 650px;
-    margin: 0 auto;
-    display: flex;
-    margin-bottom: 30px;
-    width: 55%;
+    text-align: center;
   }
 }
