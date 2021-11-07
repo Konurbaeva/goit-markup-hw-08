@@ -91,14 +91,6 @@ ul {
   padding-bottom: 94px;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   clip: rect(0 0 0 0);
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-// }
-
 .visually-hidden {
   @extend %hidden-elem;
 }
@@ -107,10 +99,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-// .section__title {
-//   margin: 94px;
-// }
 
 .section__title {
   margin-bottom: 30px;

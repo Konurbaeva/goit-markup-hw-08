@@ -19,7 +19,7 @@
     margin-bottom: 10px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    @include font(14px, #212121, 1.14, 700);
+    @include font(14px, $main-color, 1.14, 700);
     text-align: center;
 
     @media screen and (min-width: 768px) {

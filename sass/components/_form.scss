@@ -11,7 +11,7 @@
     font-size: 20px;
     line-height: calc(23 / 20);
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $main-color;
     margin-bottom: 12px;
   }
 
@@ -128,7 +128,7 @@
   width: 16px;
   height: 15px;
   cursor: pointer;
-  border: 1px solid #212121;
+  border: 1px solid $main-color;
   border-radius: 2px;
   @include centeredFlex;
   margin-right: 8px;
@@ -150,5 +150,5 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  fill: #212121;
+  fill: $main-color;
 }
