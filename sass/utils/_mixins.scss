@@ -9,9 +9,9 @@
   border-bottom: 1px $type $color;
 }
 
-@mixin font($fs, $color, $lh, $fw) {
-  font-size: $fs;
+@mixin font($fontSize, $color, $lineHeight, $fontWeight) {
+  font-size: $fontSize;
   color: $color;
-  line-height: $lh;
-  font-weight: $fw;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
 }
