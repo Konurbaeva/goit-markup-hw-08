@@ -475,12 +475,6 @@ ul {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
