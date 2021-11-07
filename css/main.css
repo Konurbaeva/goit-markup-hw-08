@@ -493,6 +493,7 @@ ul {
 
 .section {
   padding-bottom: 94px;
+  padding: 0;
 }
 
 img {
@@ -998,6 +999,10 @@ ul {
   background-repeat: no-repeat;
   max-width: 1600px;
   margin: 0 auto;
+  background-color: #2f303a;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1009,6 +1014,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herodesk@1x.jpg);
+  }
+}
+
+@media not all, (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromobile@1x.jpg);
   }
 }
 
@@ -1035,6 +1046,32 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1340,5 +1377,9 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.container {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
