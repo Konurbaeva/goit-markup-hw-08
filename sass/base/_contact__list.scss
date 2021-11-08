@@ -23,14 +23,9 @@
   color: $color-grey;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 32px 0;
-    letter-spacing: 0.02em;
+    flex-direction: column;
   }
 }
 
@@ -41,4 +36,30 @@
 }
 .contact .contact__item + .contact__item {
   margin-left: 50px;
+}
+
+.contact__item {
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact__item,
+.contact__link {
+  color: #757575;
+}
+
+.clients__list__link {
+}
+
+.contact__icon .icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
 }
