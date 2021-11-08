@@ -2,13 +2,8 @@
   display: flex;
 }
 
-// .navigation__list {
-//   display: flex;
-//   margin-left: 93px;
-// }
 .navigation__list {
   display: none;
-  // margin-left: 93px;
 
   @media screen and (min-width: 768px) {
     display: flex;

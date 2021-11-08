@@ -151,7 +151,6 @@
   margin-bottom: 30px;
 }
 
-/* Постоянные клиенты */
 .clients__list {
   display: flex;
   flex-wrap: wrap;
