@@ -23,10 +23,10 @@
   color: $color-grey;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1200px) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 }
 
 .contact__icon  {
