@@ -1,12 +1,10 @@
-// .our__work.section {
-//   padding-top: 0;
-// }
-
 .our__work.section {
   display: none;
 
   @media screen and (min-width: 1200px) {
-    display: block;
+    display: flex;
+    padding-top: 47px;
+    padding-bottom: 94px;
   }
 }
 
@@ -15,13 +13,13 @@
 }
 
 .our__work__list {
-  display: flex;
-
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
     margin-top: 50px;
+    margin-left: 90px;
   }
 }
 
