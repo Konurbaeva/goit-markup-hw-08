@@ -5,10 +5,12 @@
 @import "./base/clients__list";
 @import "./base/contact__list";
 @import "./base/filters_list";
+@import "./base/extend";
 @import "./base/our__team_list";
 @import "./base/our__work__list";
 @import "./base/social__list";
 @import "./common/common";
+@import "./common/reset";
 @import "./components/footer";
 @import "./components/footer_form";
 @import "./components/form";
@@ -16,3 +18,6 @@
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/page-header";
+@import "./components/modal";
+@import "./components/container";
+@import "./utils/breakpoints";

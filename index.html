@@ -42,11 +42,62 @@
                 +38 096 111 11 11</a>
               </li>
           </ul>
+          <button class="mob-menu-open-btn btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="16" class="mob-menu-icon">
+            <use href="./images/svg/symbol-defs.svg#icon-mob-menu"> </use>
+            
+                          </svg>
+          </button>
       </div>
+      <div class="mob-menu-container js-menu-container" id="mobile-menu">
+        <div class="mob-menu">
+            <div class="mob-menu-content">
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item">
+                        <a href="./index.html" class="mob-menu-link link">Студия</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="./portfolio.html" class="mob-menu-link link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-menu-contacts">
+                        <a class="mob-menu-contacts-item tel-link link" href="tel:+380961111111">+380961111111</a>
+                        <a class="mob-menu-contacts-item mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                <div class="mob-menu-social">
+                    <ul class="mob-menu-social-list list">
+                        <li class="mob-menu-social-item">
+                            <a href="" class="mob-menu-social-link link vl">Instagram</a>
+                        </li>
+                        <li class="mob-menu-social-item">
+                            <a href="" class="mob-menu-social-link link">Twitter</a>
+                        </li>
+                        <li class="mob-menu-social-item">
+                            <a href="" class="mob-menu-social-link link">Facebook</a>
+                        </li>
+                        <li class="mob-menu-social-item">
+                            <a href="" class="mob-menu-social-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <button type="button" class="menu-close-btn btn js-close-menu">
+            <svg width="24" height="16" class="mob-menu-close-icon">
+              <use href="./images/svg/symbol-defs.svg#icon-close"> </use>
+                            </svg>
+        </button>
+    </div>
   </header>
     <main>
-      <section class="hero">
-       <div class="container">
+      <section class="hero section">
+       <div class="container hero-container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero__button button" data-modal-open="">
           Заказать услугу
@@ -163,12 +214,18 @@
           <h2 class="our__team__title">Наша команда</h2>
           <ul class="our__team__list list">
             <li class="our__team__list__item">
-              <img
-                src="./images/img_product_designer.jpg"
-                alt="image of product_designer"
-                width="370"
-                class="img"
-              />
+              <picture>
+                <source srcset="
+                    ./images/team_1.jpg 1x,
+                    ./images/team_1-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/team_1-tab.jpg 1x,
+                    ./images/team_1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="
+                    ./images/team_1-mob.jpg 1x,
+                    ./images/team_1-mob-2x.jpg 2x" media="(min-width: 480px)">
+                <img class="team-item-img" src="./images/team_1.jpg" alt="изображение Игорь Демьяненко" width="270">
+            </picture>
              <div class="person__info">
               <h3 class="our__team__list__item__headline">Игорь Демьяненко</h3>
               <p lang="en" class="our__team__list__item__paragraph">
@@ -216,12 +273,18 @@
              </div>
             </li>
             <li class="our__team__list__item">
-              <img
-                src="./images/img_frontend_developer.jpg"
-                alt="image of frontend developer"
-                width="370"
-                class="img"
-              />
+              <picture>
+                <source srcset="
+                    ./images/team_2.jpg 1x,
+                    ./images/team_2-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/team_2-tab.jpg 1x,
+                    ./images/team_2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="
+                    ./images/team_2-mob.jpg 1x,
+                    ./images/team_2-mob-2x.jpg 2x" media="(min-width: 480px)">
+                <img class="team-item-img" src="./images/team_2.jpg" alt="изображение Ольга Репина" width="270">
+            </picture>
              <div class="person__info">
               <h3 class="our__team__list__item__headline">Ольга Репина</h3>
               <p lang="en" class="our__team__list__item__paragraph">
@@ -269,12 +332,18 @@
              </div>
             </li>
             <li class="our__team__list__item">
-              <img
-                src="./images/img_marketing.jpg"
-                alt="image of marketing specialist"
-                width="370"
-                class="img"
-              />
+              <picture>
+                <source srcset="
+                    ./images/team_3.jpg 1x,
+                    ./images/team_3-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/team_3-tab.jpg 1x,
+                    ./images/team_3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="
+                    ./images/team_3-mob.jpg 1x,
+                    ./images/team_3-mob-2x.jpg 2x" media="(min-width: 480px)">
+                <img class="team-item-img" src="./images/team_3.jpg" alt="изображение Николай Тарасов" width="270">
+            </picture>
              <div class="person__info">
               <h3 class="our__team__list__item__headline">Николай Тарасов</h3>
               <p lang="en" class="our__team__list__item__paragraph">Marketing</p>
@@ -321,12 +390,18 @@
              </div>
             </li>
             <li class="our__team__list__item">
-              <img
-                src="./images/img_ui_designer.jpg"
-                alt="image of ui designer"
-                width="370"
-                class="img"
-              />
+              <picture>
+                <source srcset="
+                    ./images/team_4.jpg 1x,
+                    ./images/team_4-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/team_4-tab.jpg 1x,
+                    ./images/team_4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="
+                    ./images/team_4-mob.jpg 1x,
+                    ./images/team_4-mob-2x.jpg 2x" media="(min-width: 480px)">
+                <img class="team-item-img" src="./images/team_4.jpg" alt="изображение Михаил Ермаков" width="270">
+            </picture>
               <div class="person__info">
                 <h3 class="our__team__list__item__headline">Михаил Ермаков</h3>
               <p lang="en" class="our__team__list__item__paragraph">UI Designer</p>
@@ -503,22 +578,25 @@
       </div>
       <div class="footer__form__box">
         <h3 class="footer__form__title">Подпишитесь на рассылку </h3>
-          <form class="footer__form">
-            <input type="text" class="footer__form__input" name="send"/>
-            <button type="submit" class="footer__form__btn">Подписаться
-              <svg width="24" height="24" class="footer__form__icon">
-                <use href="./images/svg/symbol-defs.svg#icon-send"> </use></svg>
-            </button>
-          </form>
+          <form name="signup_form" autocomplete="on" novalidate="">
+            <div class="footer-input-box">
+                <label for="user_email"></label>
+                <input class="footer-mail-input" type="email" name="email" id="user_email" placeholder="E-mail">
+                <button class="btn footer-mail-btn" type="submit"><span class="footer-btn-text">Подписаться</span> 
+                    <svg class="footer-btn-icon">
+                      <use href="./images/svg/symbol-defs.svg#icon-send"> </use></svg>
+                </button>
+            </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal="">
       <div class="modal">
-          <button data-modal-close="" type="button" class="modal-close">
-            <svg width="18" height="18">
+          <button type="button" class="close-btn btn" data-modal-close="">
+            <svg width="18" height="18" class="modal-icon">
               <use href="./images/svg/symbol-defs.svg#icon-close"> </use>
-              </svg>
-          </button>
+            </svg>
+        </button>
          <form class="form">
           <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
           <label class="form__label">
@@ -559,12 +637,17 @@
                 <use href="./images/svg/symbol-defs.svg#icon-vector"> </use>
                 </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю&#160; <a href="#" class="form__link">Условия договора</a>
+            <!-- Соглашаюсь с рассылкой и принимаю&#160; <a href="#" class="form__link">Условия договора</a> -->
+
+            <p class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю 
+              <a href="">Условия договора</a></p>
           </label>
          <button type="submit" class="form__btn">Отправить</button>
          </form>
       </div> 
   </div>
     <script src="./js/modal.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer="" src="js/mobile-menu.js"></script>
   </body>
 </html>

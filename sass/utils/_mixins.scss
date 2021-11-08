@@ -8,3 +8,10 @@
   border-top: 1px $type $color;
   border-bottom: 1px $type $color;
 }
+
+@mixin font($fontSize, $color, $lineHeight, $fontWeight) {
+  font-size: $fontSize;
+  color: $color;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
