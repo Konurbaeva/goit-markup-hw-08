@@ -10,12 +10,16 @@
   .cards__list {
     margin-left: -30px;
     margin-top: -30px;
+    padding-top: 30px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .cards__list {
+    margin-left: -30px;
+    margin-top: -30px;
     padding-right: 15px;
+    padding-top: 30px;
   }
 }
 
@@ -344,13 +348,23 @@
 
 @media screen and (min-width: 768px) {
   .filters__list {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filters__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -358,9 +372,22 @@
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .filters__list__btn {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .filters__list__btn {
-    margin-top: 15px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -4,11 +4,22 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -17,8 +28,19 @@
 }
 
 .filters__list__btn {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: 1200px) {
-    margin-top: 15px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .filters__list__btn {
