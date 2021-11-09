@@ -8,9 +8,17 @@
   @media screen and (min-width: 768px) {
     margin-left: -30px;
     margin-top: -30px;
+    padding-top: 30px;
   }
+<<<<<<< HEAD
   @media screen and (max-width: 1200px) {
+=======
+  @media screen and (min-width: 1200px) {
+    margin-left: -30px;
+    margin-top: -30px;
+>>>>>>> origin/master
     padding-right: 15px;
+    padding-top: 30px;
   }
 
   &__title {
